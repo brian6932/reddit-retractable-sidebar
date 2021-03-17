@@ -26,15 +26,10 @@
 // @namespace    http://michaelcharl.es
 // @version      0.4.4
 // @description  Make Reddit's Sidebar Retractable
-// @icon         https://mca62511.github.io/reddit-retractable-sidebar/favicon.png
-// @icon64       https://mca62511.github.io/reddit-retractable-sidebar/favicon.png
 // @author       Michael Aubrey
 // @domain       reddit.com
 // @domain       www.reddit.com
-// @match        https://www.reddit.com/*
-// @match        https://reddit.com/*
-// @match        http://www.reddit.com/*
-// @match        http://reddit.com/*
+// @match        http*://*reddit.com/*
 // @grant        none
 // @license         MIT
 
@@ -49,8 +44,8 @@
     var $content = $("div.content");
     var $toggleButton = $("<div></div>");
     $toggleButton.css({
-        background: "#CEE3F8",
-        color: "#212121",
+        background: "#1A1A1A",
+        color: "#CEE3F8",
         display: "flex",
         'justify-content': "center",
         'align-items': "center",
