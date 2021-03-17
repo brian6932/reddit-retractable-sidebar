@@ -44,7 +44,7 @@
     var $content = $("div.content");
     var $toggleButton = $("<div></div>");
     $toggleButton.css({
-        background: "#1A1A1A",
+        background: "#292929",
         color: "#CEE3F8",
         display: "flex",
         'justify-content': "center",
