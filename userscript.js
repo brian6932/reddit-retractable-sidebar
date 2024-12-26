@@ -2,7 +2,7 @@
   The MIT License (MIT)
 
   Copyright (c) 2017 Michael Charles Aubrey
-  
+
   Permission is hereby granted, free of charge, to any person obtaining a copy of
   this software and associated documentation files (the "Software"), to deal in
   the Software without restriction, including without limitation the rights to
@@ -153,7 +153,6 @@
     ********************************/
     $("body").on("keypress", function(e) {
         var tagName = e.target.tagName.toLowerCase();
-        console.log(e.keyCode);
         if (tagName === "input" || tagName === "textarea") {
             return /*do nothing */;
         }

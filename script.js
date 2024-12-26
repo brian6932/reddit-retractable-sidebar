@@ -5,7 +5,7 @@
  * for. This is the script for the GitHUb pages version of the
  * toggle button. While it does duplicate the functionality,
  * it is a bit different than what you'll find in userscript.js
- * 
+ *
  * So, if you're curious about what's going on with the userscript,
  * "userscript.js" is the file you should be looking at.
  * ********************************/
@@ -82,7 +82,6 @@
     });
     $("body").on("keypress", function(e) {
         var tagName = e.target.tagName.toLowerCase();
-        console.log(e.keyCode);
         if (tagName === "input" || tagName === "textarea") {
             return /*do nothing */;
         }
