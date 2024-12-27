@@ -2,7 +2,7 @@
 // @name         Reddit Retractable Sidebar
 // @namespace    https://greasyfork.org/users/581142
 // @namespace    https://github.com/brian6932/reddit-retractable-sidebar
-// @version      0.5.2
+// @version      0.5.3
 // @description  Make Reddit's Sidebar Retractable
 // @author       brian6932
 // @include      /^https?:\/{2}(?:[^.]+\.)?reddit\.com\/(?!submit$)/
@@ -14,7 +14,7 @@
 // jshint esversion: 11
 
 'use strict'
-if (/(?:^|; )redesign_optout=true(?:; |$)/.test(globalThis.document.cookie) || /^https?:\/{2}old\./.test(globalThis.location)) {
+if (globalThis.$ !== undefined) {
 	globalThis.document.head.innerHTML += "<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet' type='text/css'>"
 
 	const
