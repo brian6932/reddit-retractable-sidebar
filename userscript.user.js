@@ -2,7 +2,7 @@
 // @name         Reddit Retractable Sidebar
 // @namespace    https://greasyfork.org/users/581142
 // @namespace    https://github.com/brian6932/reddit-retractable-sidebar
-// @version      0.5.4
+// @version      0.5.6
 // @description  Make Reddit's Sidebar Retractable
 // @author       brian6932
 // @include      /^https?:\/{2}(?:[^.]+\.)?reddit\.com\/(?!submit$)/
@@ -82,14 +82,12 @@ if (globalThis.$.name === "jQuery") {
 			// show
 			() => {
 				sidebar.style.display = "block"
-				content.style["margin-right"] = "335px"
 				sidebarButton.innerHTML = rightIcon
 				globalThis.localStorage.setItem(lsKey, "0")
 			},
 			// hide
 			() => {
 				sidebar.style.display = "none"
-				content.style["margin-right"] = "15px"
 				sidebarButton.innerHTML = leftIcon
 				globalThis.localStorage.setItem(lsKey, "1")
 			}
