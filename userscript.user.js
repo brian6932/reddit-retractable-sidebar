@@ -14,7 +14,7 @@
 // jshint esversion: 11
 
 'use strict'
-if (/(?:^|; )redesign_optout=true;/.test(globalThis.document.cookie) || /^https?:\/{2}old\./.test(globalThis.location)) {
+if (/(?:^|; )redesign_optout=true(?:;|$)/.test(globalThis.document.cookie) || /^https?:\/{2}old\./.test(globalThis.location)) {
 	globalThis.document.head.innerHTML += "<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet' type='text/css'>"
 
 	const
