@@ -2,7 +2,7 @@
 // @name         Reddit Retractable Sidebar
 // @namespace    https://greasyfork.org/users/581142
 // @namespace    https://github.com/brian6932/reddit-retractable-sidebar
-// @version      0.5.6
+// @version      0.5.7
 // @description  Make Reddit's Sidebar Retractable
 // @author       brian6932
 // @include      /^https?:\/{2}(?:[^.]+\.)?reddit\.com\/(?!submit$)/
@@ -58,8 +58,8 @@ if (globalThis.$.name === "jQuery") {
 	the sidebar is hidden you can still see what vote
 	percentage and total votes you have.
 	***************************/
-	let votePercentage = globalThis.document.querySelector(".score").lastChild.textContent
-	if (votePercentage.at(-1) === ")") {
+	let votePercentage = globalThis.document.querySelector(".score")?.lastChild.textContent
+	if (votePercentage !== undefined && votePercentage.at(-1) === ")") {
 		// value typically looks like " (int% upvoted)"
 		votePercentage = votePercentage.slice(2, -1)
 		score.innerHTML = voteTotal === null
